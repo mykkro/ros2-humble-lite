@@ -1,6 +1,6 @@
 # ros2-humble-lite
 
-A Docker image with ROS2 Humble, MoveIT and pymoveit2, for demo development purposes.
+A Docker image with ROS2 Humble, MoveIT and pymoveit2, for demo development purposes. Uses [pymoveit2](https://github.com/AndrejOrsula/pymoveit2) and some modified configs from [panda_ign_moveit2](https://github.com/AndrejOrsula/panda_ign_moveit2).
 
 ## Usage
 
@@ -9,7 +9,7 @@ A Docker image with ROS2 Humble, MoveIT and pymoveit2, for demo development purp
 
 The following commands can be useful:
 
-* `~/starttmux.sh` - this is run automatically upon Dopcker startup. You can customize this script (add mnore panes, commands run upon startup etc.).
-* `~/killtmux.sh` - kills all tmux windows (and the Docker container)
-* `~/panda-rviz.sh` - shows Panda robot in RVIZ
-* `~/panda-movejoint.sh` - a demo script that executes a joint move action through `pymoveit2`. Yopu need to run `~/panda-rviz.sh` first.
+* `~/starttmux.sh` - this is run automatically upon Docker startup. You can customize this script (add more panes, commands run upon startup etc).
+* `~/killtmux.sh` - kills all tmux windows (and the Docker container itself)
+* `~/panda-rviz.sh` - shows Panda robot in RVIZ2
+* `~/panda-movejoint.sh` - a demo script that executes a joint move action through `pymoveit2`. You need to run `~/panda-rviz.sh` first.
