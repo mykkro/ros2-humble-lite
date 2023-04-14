@@ -13,3 +13,6 @@ The following commands can be useful:
 * `~/killtmux.sh` - kills all tmux windows (and the Docker container itself)
 * `~/panda-rviz.sh` - shows Panda robot in RVIZ2
 * `~/panda-movejoint.sh` - a demo script that executes a joint move action through `pymoveit2`. You need to run `~/panda-rviz.sh` first.
+* `~/rosbridge.sh` - starts [Rosbridge](https://foxglove.dev/blog/using-rosbridge-with-ros2) on port 9090
+* `~/foxglovebridge.sh` - starts [Foxglove Websocket Bridge](https://github.com/foxglove/ros-foxglove-bridge) on port 8765
+* `~/foxglove.sh` - starts bundled Foxglove Studio. You need to use either `rosbridge.sh` or `foxglovebridge.sh` in order to communicate with ROS.

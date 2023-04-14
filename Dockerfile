@@ -38,6 +38,14 @@ COPY killtmux.sh /root/killtmux.sh
 COPY panda-rviz.sh /root/panda-rviz.sh
 COPY panda-movejoint.sh /root/panda-movejoint.sh
 
+RUN apt-get -y update && apt install ros-humble-rosbridge-server ros-humble-foxglove-bridge -y
+
+COPY rosbridge.sh /root/rosbridge.sh
+COPY foxglovebridge.sh /root/foxglovebridge.sh
+COPY foxglove.sh /root/foxglove.sh
+
+RUN wget https://github.com/foxglove/studio/releases/download/v1.50.0/foxglove-studio-1.50.0-linux-amd64.deb && chmod 666 ./foxglove-studio-1.50.0-linux-amd64.deb &&  apt install ./foxglove-studio-1.50.0-linux-amd64.deb -y && rm ./foxglove-studio-1.50.0-linux-amd64.deb
+
 CMD ["/root/starttmux.sh"]
 
 
