@@ -46316,6 +46316,7 @@ var URDFViewer = /*#__PURE__*/function (_HTMLElement) {
     scene.add(plane); // Controls setup
 
     var controls = new _OrbitControls.OrbitControls(camera, renderer.domElement);
+    /**/orbitControls = controls;
     controls.rotateSpeed = 2.0;
     controls.zoomSpeed = 5;
     controls.panSpeed = 2;
