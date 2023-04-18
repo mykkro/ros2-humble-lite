@@ -5,7 +5,13 @@ A Docker image with ROS2 Humble, MoveIT and pymoveit2, for demo development purp
 ## Usage
 
 * **Build** the image with: `build.sh`. This will create image named `ros2-humble-lite`.
-* **Run** the image with: `run.sh`. This will open a TMUX session with four shells.
+* **Run** the image with: `run.sh`. This will open a TMUX session with four shells. You can also use script `run-nohost.sh` - this will run Docker without option `--network=host`. Curiously, it is needed under Windows WSL in order to have container ports visible in the host.
+
+The following ports are exposed:
+* 9090 - for Rosbridge
+* 8765 - for Foxglove Web Bridge
+* 5000 - for demo webapp projects (see dirs under `/share` folder)
+
 
 The following commands can be useful:
 
