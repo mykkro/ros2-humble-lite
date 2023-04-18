@@ -46,6 +46,8 @@ COPY foxglove.sh /root/foxglove.sh
 
 RUN wget https://github.com/foxglove/studio/releases/download/v1.50.0/foxglove-studio-1.50.0-linux-amd64.deb && chmod 666 ./foxglove-studio-1.50.0-linux-amd64.deb &&  apt install ./foxglove-studio-1.50.0-linux-amd64.deb -y && rm ./foxglove-studio-1.50.0-linux-amd64.deb
 
+RUN pip3 install flask pyyaml
+
 CMD ["/root/starttmux.sh"]
 
 

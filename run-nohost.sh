@@ -2,7 +2,6 @@
 
 docker run \
   --rm \
-  --network=host \
   -e DISPLAY \
   -e XAUTHORITY=/tmp/.Xauthority \
   -v ~/.Xauthority:/tmp/.Xauthority \
