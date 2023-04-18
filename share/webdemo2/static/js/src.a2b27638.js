@@ -47322,7 +47322,7 @@ customElements.define('urdf-viewer', _urdfManipulatorElement.default); // declar
 // Hack to make the build work with webpack for now.
 // TODO: Remove this once modules or parcel is being used
 
-var viewer = document.querySelector('urdf-viewer');
+/*var */viewer = document.querySelector('urdf-viewer');
 var limitsToggle = document.getElementById('ignore-joint-limits');
 var collisionToggle = document.getElementById('collision-toggle');
 var radiansToggle = document.getElementById('radians-toggle');
@@ -47334,7 +47334,7 @@ var controlsToggle = document.getElementById('toggle-controls');
 var animToggle = document.getElementById('do-animate');
 var DEG2RAD = Math.PI / 180;
 var RAD2DEG = 1 / DEG2RAD;
-var sliders = {}; // Global Functions
+/*var */sliders = {}; // Global Functions
 
 var setColor = function setColor(color) {
   document.body.style.backgroundColor = color;

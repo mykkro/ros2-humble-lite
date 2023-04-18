@@ -52,7 +52,15 @@ function ROSInit() {
         // Then we add a callback to be called every time a message is published on this topic.
         listener.subscribe(function(message) {
             const positions = message.position;
-          console.log('Received positions:', positions);
+            const names = message.name
+            //console.log('Received positions:', positions, names);
+
+            // update joints in viewer based on incoming topic
+            for(var i=0; i<names.length; i++) {
+                var name = names[i];
+                var pos = positions[i];
+                viewer.setJointValue(name, pos)
+            }
       
           // If desired, we can unsubscribe from the topic as well.
           // listener.unsubscribe();
