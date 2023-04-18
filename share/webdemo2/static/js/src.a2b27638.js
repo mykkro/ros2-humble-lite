@@ -47611,7 +47611,8 @@ document.addEventListener('WebComponentsReady', function () {
     return updateAngles();
   });
   updateLoop();
-  viewer.camera.position.set(-5.5, 3.5, 5.5);
+  // viewer.camera.position.set(-5.5, 3.5, 5.5);
+  viewer.camera.position.set(-0.55, 0.35, 0.55);
 });
 },{"three":"../node_modules/three/build/three.module.js","./dragAndDrop.js":"src/dragAndDrop.js","three/examples/jsm/loaders/STLLoader.js":"../node_modules/three/examples/jsm/loaders/STLLoader.js","three/examples/jsm/loaders/GLTFLoader.js":"../node_modules/three/examples/jsm/loaders/GLTFLoader.js","three/examples/jsm/loaders/ColladaLoader.js":"../node_modules/three/examples/jsm/loaders/ColladaLoader.js","three/examples/jsm/loaders/OBJLoader.js":"../node_modules/three/examples/jsm/loaders/OBJLoader.js","../../src/urdf-manipulator-element.js":"../src/urdf-manipulator-element.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
